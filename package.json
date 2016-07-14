@@ -1,0 +1,38 @@
+{
+  "name": "jquery.cookiefy",
+  "version": "0.1.0",
+  "description": "Lightweight jQuery plugin to the EU cookie laws",
+  "main": "dist/jquery.cookiefy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "cookie",
+    "eu",
+    "law",
+    "cookiefy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmarryo/jquery.cookiefy.git"
+  },
+  "author": "Mario Lemke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmarryo/jquery.cookiefy/issues"
+  },
+  "homepage": "https://github.com/kmarryo/jquery.cookiefy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.7",
+    "gulp-inline-base64": "^0.1.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-watch": "^4.3.8"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
