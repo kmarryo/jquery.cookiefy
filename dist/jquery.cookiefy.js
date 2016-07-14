@@ -1,6 +1,6 @@
 /**
  * jquery.cookiefy - Lightweight jQuery plugin to the EU cookie laws
- * @version v0.1.0 (2016-07-14 17:09:51)
+ * @version v0.1.0 (2016-07-14 17:32:13)
  * @documentation https://github.com/kmarryo/jquery.cookiefy#readme
  * @author Mario Lemke
  */
@@ -34,7 +34,7 @@ function get_cookie(c_name) {
     "use strict";
 
     // Create the defaults once
-    var pluginName = 'euLawCookie',
+    var pluginName = 'cookiefy',
         defaults = {
             color: '#000',
             fontFamily: 'Arial',
@@ -48,7 +48,7 @@ function get_cookie(c_name) {
         this._defaults = defaults;
         this._name = pluginName;
         this.init();
-    }
+    } 
 
     // Avoid Plugin.prototype conflicts
     $.extend(Plugin.prototype, {

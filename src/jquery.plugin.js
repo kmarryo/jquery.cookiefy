@@ -4,7 +4,7 @@
     "use strict";
 
     // Create the defaults once
-    var pluginName = 'euLawCookie',
+    var pluginName = 'cookiefy',
         defaults = {
             color: '#000',
             fontFamily: 'Arial',

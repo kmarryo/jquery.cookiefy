@@ -1,5 +1,5 @@
 $(function () {
-    $('body').euLawCookie({
+    $('body').cookiefy({
         devMode: true,
         backgroundColor: '#ffffcc',
         color:'#404040',
