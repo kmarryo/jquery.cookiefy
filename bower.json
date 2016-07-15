@@ -28,6 +28,6 @@
     "images"
   ],
   "dependencies": {
-    "jquery": "~3.1.0"
+    "jquery": "*"
   }
 }
