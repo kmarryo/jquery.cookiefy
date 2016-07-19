@@ -41,7 +41,8 @@ Define your own text and styles for the eu-cookie warning.
 | `fontFamily` | | `Helvetica` | Sets the font-family |
 | `fontSize` |  | `1.25em` | Sets the font-size. |
 | `borderTop` | `1px solid #000` | `2px dotted green` | Sets the border-top value. |
-| `devMode` | `false`  |  | On `true` no cookie will be set and the warning shows up every timeyou open the page.  |
+| `cssPrefix` | `cookiefy_` | `my-own-page_` | Set the css id prefix for all created DOM elements and for the cookie name |
+| `devMode` | `false`  |  | On `true` no cookie will be set and the warning shows up every time you open the page.  |
 
 *`We use cookies to ensure that we give you the best experience on our website. If you continue, you agree with <strong>our cookie policy</strong>.`
 

@@ -11,9 +11,10 @@ var inline_base64 = require('gulp-inline-base64');
 var pkg = require('./package.json');
 var banner = ['/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
-    ' * @version v<%= pkg.version %> (<%= new Date().toLocaleString() %>)',
-    ' * @documentation <%= pkg.homepage %>',
-    ' * @author <%= pkg.author %>',
+    ' * @version: v<%= pkg.version %> (<%= new Date().toLocaleString() %>)',
+    ' * @documentation: <%= pkg.homepage %>',
+    ' * @author: <%= pkg.author %>',
+    ' * @license: <%= pkg.license %>',
     ' */',
     ''].join('\n');
 
