@@ -57,6 +57,11 @@ $('body').cookiefy({
 });
 ```
 
+### Customize via CSS
+You can style this three css ids:
+- `#cookiefy_bar` (complete cookie message div)
+- `#cookiefy_cookie-text`
+- `#cookiefy_close` (close button)
 
 # License
 MIT

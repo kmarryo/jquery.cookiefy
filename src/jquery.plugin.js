@@ -57,9 +57,10 @@
             
             // Style cookie div
             var footerElement = $('<div />', {
+                id: settings.cssPrefix + 'bar',
                 css: defaultCssObject,
             });
-            
+
             var createOverlay = function () {
                 var textElement = $('<div/>', {
                     html: settings.displayedHtml,
@@ -90,6 +91,7 @@
                 
                 footerElement.append(textElement);
                 footerElement.append(closeButton);
+                footerElement.find( "a" ).css( "text-decoration", "underline" );
                 
                 $(me).append(footerElement);
                 

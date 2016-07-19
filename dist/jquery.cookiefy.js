@@ -1,7 +1,7 @@
 /**
  * jquery.cookiefy - Lightweight jQuery plugin to the EU cookie laws
- * @version: v1.0.1 (7/19/2016, 4:08:54 PM)
- * @documentation: https://github.com/kmarryo/jquery.cookiefy#readme
+ * @version: v1.0.2 (2016-07-19 16:40:56)
+ * @documentation: https://kmarryo.github.io/jquery.cookiefy/
  * @author: Mario Lemke (https://github.com/kmarryo)
  * @license: MIT
  */
@@ -88,9 +88,10 @@ function get_cookie(c_name) {
             
             // Style cookie div
             var footerElement = $('<div />', {
+                id: settings.cssPrefix + 'bar',
                 css: defaultCssObject,
             });
-            
+
             var createOverlay = function () {
                 var textElement = $('<div/>', {
                     html: settings.displayedHtml,
@@ -121,6 +122,7 @@ function get_cookie(c_name) {
                 
                 footerElement.append(textElement);
                 footerElement.append(closeButton);
+                footerElement.find( "a" ).css( "text-decoration", "underline" );
                 
                 $(me).append(footerElement);
                 
