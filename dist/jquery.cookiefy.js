@@ -1,8 +1,9 @@
 /**
  * jquery.cookiefy - Lightweight jQuery plugin to the EU cookie laws
- * @version v1.0.0 (2016-07-19 12:06:30)
- * @documentation https://github.com/kmarryo/jquery.cookiefy#readme
- * @author Mario Lemke
+ * @version: v1.0.1 (7/19/2016, 4:08:54 PM)
+ * @documentation: https://github.com/kmarryo/jquery.cookiefy#readme
+ * @author: Mario Lemke (https://github.com/kmarryo)
+ * @license: MIT
  */
 //Set a Cookie
 function set_cookie(c_name, value, exdays) {
@@ -32,7 +33,7 @@ function get_cookie(c_name) {
 // scripts and/or other plugins which may not be closed properly.
 ;(function ($, window, document, undefined) {
     "use strict";
-
+    
     // Create the defaults once
     var pluginName = 'cookiefy',
         defaults = {
@@ -43,24 +44,26 @@ function get_cookie(c_name) {
             fontSize: undefined,
             borderTop: '1px solid #000',
             displayedHtml: 'We use cookies to ensure that we give you the best experience on our website. If you continue, you agree with <strong>our cookie policy</strong>.',
-        }; 
+            cssPrefix: pluginName + '_',
+        };
+    
     // The actual plugin constructor
     function Plugin(element, options) {
         this.element = element;
         this.settings = $.extend(defaults, options);
-
+        
         this._defaults = defaults;
         this._name = pluginName;
         this.init();
     }
-
+    
     // Avoid Plugin.prototype conflicts
     $.extend(Plugin.prototype, {
         init: function () {
             var settings = this.settings;
             var me = this.element;
-
-            var defaultCssObject =  {
+            
+            var defaultCssObject = {
                 width: "100%",
                 display: "none",
                 position: "fixed",
@@ -73,34 +76,33 @@ function get_cookie(c_name) {
                 color: settings.color,
                 borderTop: settings.borderTop,
                 boxShadow: '0px 1px 4px 1px rgba(64,64,64,1)'
-            }
-
-            if(typeof settings.fontFamily !== "undefined") {
+            };
+            
+            if (typeof settings.fontFamily !== "undefined") {
                 defaultCssObject.fontFamily = settings.fontFamily;
             }
-
-            if(typeof settings.fontSize !== "undefined") {
+            
+            if (typeof settings.fontSize !== "undefined") {
                 defaultCssObject.fontSize = settings.fontSize;
             }
-
-            var cssPrefixer = 'cookiefy_';
+            
             // Style cookie div
             var footerElement = $('<div />', {
                 css: defaultCssObject,
             });
-
+            
             var createOverlay = function () {
                 var textElement = $('<div/>', {
                     html: settings.displayedHtml,
-                    id: cssPrefixer + 'cookie-text',
+                    id: settings.cssPrefix + 'cookie-text',
                     css: {
                         paddingLeft: '15%',
                         paddingRight: '15%'
                     }
                 });
-
+                
                 var closeButton = $('<div/>', {
-                    id: cssPrefixer + "close",
+                    id: settings.cssPrefix + "close",
                     css: {
                         textDecoration: 'underline',
                         cursor: 'pointer',
@@ -110,46 +112,46 @@ function get_cookie(c_name) {
                         right: '25px',
                         width: '30px',
                         height: '30px',
-                        transform: 'translateY(-50%)' 
+                        transform: 'translateY(-50%)'
                     }
-                }).on('click', function() {
+                }).on('click', function () {
                     hideOverlay();
                 });
-
-
+                
+                
                 footerElement.append(textElement);
                 footerElement.append(closeButton);
-
+                
                 $(me).append(footerElement);
-
+                
             };
             var showOverlay = function () {
                 footerElement.fadeIn(500);
-
+                
             };
             var hideOverlay = function () {
-                footerElement.fadeOut(500, function() {
+                footerElement.fadeOut(500, function () {
                     $(this).remove();
                 });
             };
-
+            
             var createCookie = function () {
-                set_cookie(cssPrefixer, true);
+                set_cookie(settings.cssPrefix + "cookie", true);
             };
-
+            
             var readCookie = function () {
-                return get_cookie(cssPrefixer);
+                return get_cookie(settings.cssPrefix + "cookie");
             };
-
-
-            if(settings.devMode || !readCookie()) {
+            
+            
+            if (settings.devMode || !readCookie()) {
                 createCookie();
                 createOverlay();
                 showOverlay();
             }
-        }, 
+        },
     });
-
+    
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
     $.fn[pluginName] = function (options) {
@@ -160,5 +162,5 @@ function get_cookie(c_name) {
             }
         });
     };
-
+    
 })(jQuery, window, document);
