@@ -1,6 +1,8 @@
 # jquery.cookiefy
 Lightweight jQuery plugin to the EU cookie laws
 
+**Demo: https://kmarryo.github.io/jquery.cookiefy/**
+
 :warning: **work in process**
 
 ## Installation
@@ -19,7 +21,6 @@ Lightweight jQuery plugin to the EU cookie laws
     ```html
     <script src="node_modules/jquery.cookiefy/dist/jquery.cookiefy.min.js"></script>
     ```
-
     3. When using downloaded files
     ```html
     <script src="YOUR_PATH/jquery.cookiefy.min.js"></script>
@@ -33,21 +34,27 @@ $('body').cookiefy();
 
 ### Parameters
 Define your own text and styles for the eu-cookie hint in the app.js. Set dev mode to false for going live.
-* `devMode` (true/false)
-* `backgroundColor`
-* `color`
-* `fontFamily`
-* `fontSize`
-* `borderTop`
+
+| Name | Default | Sample | Description |
+|---|---|---|---|
+| `displayedHtml` | warning text* |  | You can insert your own cookie warning text, e.g. with a link to your cookie policy site. |
+| `backgroundColor` | `#bebebe` | `tomato` | Changes the background-color of the cookie-warning. |
+| `color` | `#000` | `#fff` | Sets the color. |
+| `fontFamily` | | `Helvetica` | Sets the font-family |
+| `fontSize` |  | `1.25em` | Sets the font-size. |
+| `borderTop` | `1px solid #000` | `2px dotted green` | Sets the border-top value. |
+| `devMode` | `false`  |  | On `true` no cookie will be set and the warning shows up every time you open the page.  |
+
+*`We use cookies to ensure that we give you the best experience on our website. If you continue, you agree with <strong>our cookie policy</strong>.`
 
 ### Example
 ```JavaScript
 $('body').cookiefy({
-    backgroundColor: '#ffffcc',
-    color:'#404040',
-    fontFamily: 'Trebuchet MS',
-    fontSize: '13px',
-    borderTop: '1px solid #404040'
+    backgroundColor: 'dimgray',
+    color:'ghostwhite',
+    fontFamily: 'Helvetica',
+    fontSize: '1rem',
+    borderTop: '1px solid #000'
 });
 ```
 
