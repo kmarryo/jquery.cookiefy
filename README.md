@@ -3,8 +3,6 @@ Lightweight jQuery plugin to the EU cookie laws
 
 **Demo: https://kmarryo.github.io/jquery.cookiefy/**
 
-:warning: **work in process**
-
 ## Installation
 
 1. Install via either [bower](http://bower.io/), [npm](https://www.npmjs.com/) or downloaded files:
