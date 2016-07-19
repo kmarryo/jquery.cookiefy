@@ -43,6 +43,7 @@ Define your own text and styles for the eu-cookie warning.
 | `borderTop` | `1px solid #000` | `2px dotted green` | Sets the border-top value. |
 | `cssPrefix` | `cookiefy_` | `my-own-page_` | Set the css id prefix for all created DOM elements and for the cookie name |
 | `devMode` | `false`  |  | On `true` no cookie will be set and the warning shows up every time you open the page.  |
+| `closeButtonUrl` | `close button in base64 style`  |  | For another close image just paste in your src  |
 
 *`We use cookies to ensure that we give you the best experience on our website. If you continue, you agree with <strong>our cookie policy</strong>.`
 
@@ -53,7 +54,8 @@ $('body').cookiefy({
     color:'ghostwhite',
     fontFamily: 'Helvetica',
     fontSize: '1rem',
-    borderTop: '1px solid #000'
+    borderTop: '1px solid #000',
+    closeButtonUrl: 'https://cdn3.iconfinder.com/data/icons/interface/100/close_button_1-512.png'
 });
 ```
 

@@ -6,6 +6,7 @@ $(function () {
         fontFamily: 'Trebuchet MS',
         fontSize: '13px',
         borderTop: '1px solid #404040',
-        devMode: true
+        devMode: true,
+        closeButtonUrl: ''
     });
 });
