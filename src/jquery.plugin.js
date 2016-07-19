@@ -6,9 +6,13 @@
     // Create the defaults once
     var pluginName = 'cookiefy',
         defaults = {
+            devMode: false,
+            backgroundColor: '#bebebe',
             color: '#000',
-            fontFamily: 'Arial',
-            devMode: false
+            fontFamily: undefined,
+            fontSize: undefined,
+            borderTop: '1px solid #000',
+            displayedHtml: 'We use cookies to ensure that we give you the best experience on our website. If you continue, you agree with <strong>our cookie policy</strong>.',
         };
     // The actual plugin constructor
     function Plugin(element, options) {
@@ -26,33 +30,39 @@
             var settings = this.settings;
             var me = this.element;
 
+            var defaultCssObject =  {
+                width: "100%",
+                display: "none",
+                position: "fixed",
+                bottom: 0,
+                left: 0,
+                opacity: 0.9,
+                padding: '15px 0',
+                textAlign: 'center',
+                backgroundColor: settings.backgroundColor,
+                color: settings.color,
+                borderTop: settings.borderTop,
+                boxShadow: '0px 1px 4px 1px rgba(64,64,64,1)'
+            }
+
+            if(typeof settings.fontFamily !== "undefined") {
+                defaultCssObject.fontFamily = settings.fontFamily;
+            }
+
+            if(typeof settings.fontSize !== "undefined") {
+                defaultCssObject.fontSize = settings.fontSize;
+            }
 
             var cssPrefixer = 'cookiefy_';
             // Style cookie div
             var footerElement = $('<div />', {
-                css: {
-                    width: "100%",
-                    display: "none",
-                    position: "fixed",
-                    bottom: 0,
-                    left: 0,
-                    opacity: 0.9,
-                    padding: '15px 0',
-                    textAlign: 'center',
-                    backgroundColor: settings.backgroundColor,
-                    color: settings.color,
-                    fontFamily: settings.fontFamily,
-                    fontSize: settings.fontSize,
-                    borderTop: settings.borderTop,
-                    boxShadow: '0px 1px 4px 1px rgba(64,64,64,1)'
-                },
+                css: defaultCssObject,
             });
 
             var createOverlay = function () {
-                var cookieText = 'Diese Seite verwendet sowohl eigene als auch Cookies von Dritten, um Ihnen den bestmöglichen Service zu gewährleisten. Wenn Sie auf unseren Seiten surfen, stimmen Sie der Nutzung von Cookies zu.';
                 var textElement = $('<div/>', {
-                    html: cookieText,
-                    id: 'cookie-text',
+                    html: settings.displayedHtml,
+                    id: cssPrefixer + 'cookie-text',
                     css: {
                         paddingLeft: '15%',
                         paddingRight: '15%'

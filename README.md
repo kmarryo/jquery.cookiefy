@@ -33,7 +33,7 @@ $('body').cookiefy();
 ```
 
 ### Parameters
-Define your own text and styles for the eu-cookie hint in the app.js. Set dev mode to false for going live.
+Define your own text and styles for the eu-cookie warning.
 
 | Name | Default | Sample | Description |
 |---|---|---|---|
