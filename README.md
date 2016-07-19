@@ -35,7 +35,7 @@ Define your own text and styles for the eu-cookie warning.
 
 | Name | Default | Sample | Description |
 |---|---|---|---|
-| `displayedHtml` | warning text* |  | You can insert your own cookie warning text, e.g.<br>with a link to your cookie policy site. |
+| `displayedHtml` | warning text* |  | You can insert your own cookie warning<br>text, e.g.with a link to your cookie policy site. |
 | `backgroundColor` | `#bebebe` | `tomato` | Changes the background-color of the cookie-warning. |
 | `color` | `#000` | `#fff` | Sets the color. |
 | `fontFamily` | | `Helvetica` | Sets the font-family |
