@@ -1,6 +1,6 @@
 /**
  * jquery.cookiefy - Lightweight jQuery plugin to the EU cookie laws
- * @version: v1.0.2 (2016-07-19 17:40:10)
+ * @version: v1.0.2 (2016-07-20 10:13:23)
  * @documentation: https://kmarryo.github.io/jquery.cookiefy/
  * @author: Mario Lemke (https://github.com/kmarryo)
  * @license: MIT
@@ -122,7 +122,7 @@ function get_cookie(c_name) {
                     css: closeButtonCssObject
                 }).on('click', function () {
                     hideOverlay();
-                }); 
+                });
 
 
                 footerElement.append(textElement);
