@@ -1,6 +1,6 @@
 /**
  * jquery.cookiefy - Lightweight jQuery plugin to the EU cookie laws
- * @version: v1.0.2 (2016-07-20 10:13:23)
+ * @version: v1.0.3 (2016-07-20 10:15:07)
  * @documentation: https://kmarryo.github.io/jquery.cookiefy/
  * @author: Mario Lemke (https://github.com/kmarryo)
  * @license: MIT
