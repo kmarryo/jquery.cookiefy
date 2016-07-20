@@ -4,7 +4,7 @@
 
 Lightweight jQuery plugin to the EU cookie laws
 
-**Demo: https://kmarryo.github.io/jquery.cookiefy/**
+**Demo: [kmarryo.github.io/jquery.cookiefy](https://kmarryo.github.io/jquery.cookiefy/)**
 
 ## Installation
 
