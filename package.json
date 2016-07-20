@@ -1,6 +1,6 @@
 {
   "name": "jquery.cookiefy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight jQuery plugin to the EU cookie laws",
   "main": "dist/jquery.cookiefy.js",
   "scripts": {
@@ -33,6 +33,6 @@
     "gulp-watch": "^4.3.8"
   },
   "dependencies": {
-    "jquery": "*"
+    "jquery": ">=1.8.0"
   }
 }
