@@ -40,7 +40,7 @@ Define your own text and styles for the eu-cookie warning.
 
 | Name | Default | Sample | Description |
 |---|---|---|---|
-| `displayedHtml` | warning text* |  | You can insert your own cookie warning<br>text, e.g.with a link to your cookie policy site. |
+| **`displayedHtml`** | warning text* |  | You can insert your own cookie warning<br>text, e.g.with a link to your cookie policy site. |
 | `closeButtonUrl` |   | `close-btn.png` | Change the close button. Valid parameters:<br>relative/absolute image url or base64 string  |
 | `backgroundColor` | `#bebebe` | `tomato` | Changes the background-color of the<br>cookie-warning. |
 | `color` | `#000` | `#fff` | Sets the color. |
