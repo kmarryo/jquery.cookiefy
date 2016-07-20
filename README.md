@@ -1,8 +1,8 @@
 # jquery.cookiefy
-Lightweight jQuery plugin to the EU cookie laws
-
 [![npm version](https://badge.fury.io/js/jquery.cookiefy.svg)](https://badge.fury.io/js/jquery.cookiefy)
 [![Bower version](https://badge.fury.io/bo/jquery.cookiefy.svg)](https://badge.fury.io/bo/jquery.cookiefy)
+
+Lightweight jQuery plugin to the EU cookie laws
 
 **Demo: https://kmarryo.github.io/jquery.cookiefy/**
 
