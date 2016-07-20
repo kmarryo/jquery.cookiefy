@@ -56,7 +56,7 @@ Define your own text and styles for the eu-cookie warning.
 ```JavaScript
 $('body').cookiefy({
     backgroundColor: 'dimgray',
-    color:'ghostwhite',
+    color: 'ghostwhite',
     fontFamily: 'Helvetica',
     fontSize: '1rem',
     borderTop: '1px solid #000',
