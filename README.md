@@ -8,7 +8,8 @@ Lightweight jQuery plugin to the EU cookie laws
 1. Install via either [bower](http://bower.io/), [npm](https://www.npmjs.com/) or downloaded files:
     1. via bower: `bower install --save jquery.cookiefy`
     2. via npm: `npm install --save jquery.cookiefy`
-    3. via [downloaded files](https://github.com/kmarryo/jquery.cookiefy/zipball/master)
+    3. via CDN ([jsDelivr](http://www.jsdelivr.com/projects/jquery.cookiefy))
+    4. via [downloaded files](https://github.com/kmarryo/jquery.cookiefy/zipball/master)
 
 2. Include jquery.cookiefy in your HTML.
     1. When using bower
@@ -19,7 +20,11 @@ Lightweight jQuery plugin to the EU cookie laws
     ```html
     <script src="node_modules/jquery.cookiefy/dist/jquery.cookiefy.min.js"></script>
     ```
-    3. When using downloaded files
+    3. When using CDN
+    ```html
+    <script src="//cdn.jsdelivr.net/jquery.cookiefy/1.0/jquery.cookiefy.min.js"></script>
+    ```
+    4. When using downloaded files
     ```html
     <script src="YOUR_PATH/jquery.cookiefy.min.js"></script>
     ```
