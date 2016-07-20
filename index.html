@@ -65,8 +65,8 @@
                 <ul class="benefits-list">
                     <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Simple to understand.</li>
                     <li><i class="fa fa-code" aria-hidden="true"></i>Easy to customize.</li>
-                    <li><i class="fa fa-balance-scale" aria-hidden="true"></i>Very lightweight: Only xx kb total.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i>Create and customize your EU cookie law warning in just a few minutes.</li>
+                    <li><i class="fa fa-balance-scale" aria-hidden="true"></i>Lightweight: just <strong>4 kb</strong> total.</li>
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>Create and customize your EU cookie law warning in just a few minutes.</li>
                 </ul>
             </div>
         </div>
@@ -76,22 +76,25 @@
                 <h2 id="installation">Installation</h2>
                 <ul class="standard-list text-justify">
                     <li>
-                        Install via either <a href="http://bower.io/">bower</a>, <a
-                            href="https://www.npmjs.com/">npm</a> or downloaded files:
+                        <strong>Install</strong> via either <a href="http://bower.io/">bower</a>, <a
+                            href="https://www.npmjs.com/">npm</a>, CDN or downloaded files:
                         <ul>
                             <li>via bower: <code>bower install --save jquery.cookiefy</code></li>
                             <li>via npm: <code>npm install --save jquery.cookiefy</code></li>
+                            <li>via CDN (<a href="http://www.jsdelivr.com/projects/jquery.cookiefy" target="_blank">jsDelivr</a>)
+                            </li>
                             <li>via <a href="https://github.com/kmarryo/jquery.cookiefy/zipball/master">downloaded
                                 files</a> from GitHub
                             </li>
                         </ul>
                     </li>
-                    <li>Include jquery.cookiefy in your HTML.
+                    <li><strong>Include</strong> jquery.cookiefy in your HTML.
                         <ul>
                             <li>When using bower: <code>&lt;script src="bower_components/jquery.cookiefy/dist/jquery.cookiefy.min.js">&lt;/script&gt;</code>
                             </li>
                             <li>When using npm: <code>&lt;script src="node_modules/jquery.cookiefy/dist/jquery.cookiefy.min.js">&lt;/script&gt;</code>
                             </li>
+                            <li>When using CDN: <code>&lt;script src="//cdn.jsdelivr.net/jquery.cookiefy/1.0/jquery.cookiefy.min.js">&lt;/script></code></li>
                             <li>When using downloaded files: <code>&lt;script src="YOUR_PATH/jquery.cookiefy.min.js">&lt;/script&gt;</code></li>
                         </ul>
                     </li>
@@ -117,7 +120,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">displayedHtml</th>
+                            <th scope="row"><code>displayedHtml</code></th>
                             <td>warning text*</td>
                             <td></td>
                             <td>You can insert your own cookie warning text, e.g.with a link to your cookie policy
@@ -125,53 +128,53 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">backgroundColor</th>
-                            <td>#bebebe</td>
-                            <td>tomato</td>
-                            <td>Changes the background-color of the cookie-warning.</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">color</th>
-                            <td>#000</td>
-                            <td>#fff</td>
-                            <td>Sets the color.</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">fontFamily</th>
+                            <th scope="row"><code>closeButtonUrl</code></th>
                             <td></td>
-                            <td>Helvetica</td>
-                            <td>Sets the font-family</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">fontSize</th>
-                            <td></td>
-                            <td>1.25em</td>
-                            <td>Sets the font-size.</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">borderTop</th>
-                            <td>1px solid #000</td>
-                            <td>2px dotted green</td>
-                            <td>Sets the border-top value.</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">cssPrefix</th>
-                            <td>cookiefy_</td>
-                            <td>my-own-page_</td>
-                            <td>Set the css id prefix for all created DOM elements and for the cookie name</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">devMode</th>
-                            <td>false</td>
-                            <td></td>
-                            <td>On true no cookie will be set and the warning shows up every time you open the page.
+                            <td><code>'img/close.png'</code></td>
+                            <td>Defines the URL of the close icon. It can be a relative or absolute URL or a base64-encoded image.
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">closeButtonUrl</th>
+                            <th scope="row"><code>backgroundColor</code></th>
+                            <td><code>#bebebe</code></td>
+                            <td><code>tomato</code></td>
+                            <td>Changes the background-color of the cookie-warning.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>color</code></th>
+                            <td><code>#000</code></td>
+                            <td><code>red</code></td>
+                            <td>Sets the color.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>fontFamily</code></th>
                             <td></td>
-                            <td>'../img/close-button.png'</td>
-                            <td>Defines the URL of the close icon. It can be a relative or absolute URL or a base64-encoded image.
+                            <td><code>Helvetica</code></td>
+                            <td>Sets the font-family</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>fontSize</code></th>
+                            <td></td>
+                            <td><code>1.25em</code></td>
+                            <td>Sets the font-size.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>borderTop</code></th>
+                            <td><code>1px solid #000</code></td>
+                            <td><code>2px dotted green</code></td>
+                            <td>Sets the border-top value.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>cssPrefix</code></th>
+                            <td><code>cookiefy_</code></td>
+                            <td><code>my-own-page_</code></td>
+                            <td>Set the css id prefix for all created DOM elements and for the cookie name</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>devMode</code></th>
+                            <td><code>false</code></td>
+                            <td></td>
+                            <td>On <code>true</code> no cookie will be set and the warning shows up every time you open the page.
                             </td>
                         </tr>
                         </tbody>
@@ -187,11 +190,11 @@
                 <div class="bs-callout bs-callout-info">
                     <p><code>
 $('body').cookiefy({<br>
-    backgroundColor: 'dimgray',<br>
-    color:'ghostwhite',<br>
-    fontFamily: 'Helvetica',<br>
-    fontSize: '1rem',<br>
-    borderTop: '1px solid #000'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor: 'dimgray',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color:'ghostwhite',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fontFamily: 'Helvetica',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fontSize: '1rem',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;borderTop: '1px solid #000'<br>
 });
                     </code></p>
                 </div>
