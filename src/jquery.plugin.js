@@ -7,6 +7,7 @@
     var pluginName = 'cookiefy',
         defaults = {
             devMode: false,
+            zIndex: 50,
             backgroundColor: '#bebebe',
             color: '#000',
             borderTop: '1px solid #000',
@@ -43,7 +44,8 @@
                 backgroundColor: settings.backgroundColor,
                 color: settings.color,
                 borderTop: settings.borderTop,
-                boxShadow: '0px 1px 4px 1px rgba(64,64,64,1)'
+                boxShadow: '0px 1px 4px 1px rgba(64,64,64,1)',
+                zIndex: settings.zIndex
             };
 
             if (typeof settings.fontFamily !== "undefined") {
@@ -69,7 +71,7 @@
                     html: settings.displayedHtml,
                     id: settings.cssPrefix + 'cookie-text',
                     css: {
-                        paddingLeft: '15%',
+                        paddingLeft: '10%',
                         paddingRight: '15%'
                     }
                 });
@@ -79,7 +81,7 @@
                     cursor: 'pointer',
                     position: 'absolute',
                     top: '50%',
-                    right: '25px',
+                    right: '3%',
                     width: 'auto',
                     maxHeight: '2rem',
                     transform: 'translateY(-50%)'
