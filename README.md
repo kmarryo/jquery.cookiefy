@@ -51,7 +51,7 @@ Define your own text and styles for the eu-cookie warning.
 | **`fontSize`** |  | `1.25em` | Sets the font-size. |
 | **`borderTop`** | `1px solid #000` | `2px dotted green` | Sets the border-top value |
 | **`borderTop`** | `1px solid #000` | `2px dotted green` | Sets the border-top value |
-| **`zIndex`** | `50` | `130` | Set `z-index` value of the cookie warning container |
+| **`zIndex`** | `50` | `130` | Set the `z-index` value of the cookie warning container |
 | **`devMode`** | `false`  | `true` | On `true` no cookie will be set and the warning<br>shows up every time you open the page |
 
 *`We use cookies to ensure that we give you the best experience on our website. If you continue, you agree with <strong>our cookie policy</strong>.`
