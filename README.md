@@ -25,7 +25,7 @@ Lightweight jQuery plugin to the EU cookie laws
     ```
     3. When using CDN
     ```html
-    <script src="//cdn.jsdelivr.net/jquery.cookiefy/1.0/jquery.cookiefy.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.cookiefy@1.0/dist/jquery.cookiefy.min.js"></script>
     ```
     4. When using downloaded files
     ```html
